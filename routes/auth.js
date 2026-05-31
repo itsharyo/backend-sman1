@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('../models/User'); // Memanggil kerangka User yang barusan kamu buat
+const User = require('../models/user'); // Memanggil kerangka User yang barusan kamu buat
 
 // Jalur untuk Registrasi (Daftar Akun Baru)
 router.post('/register', async (req, res) => {
