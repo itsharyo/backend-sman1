@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 // Jalur ini akan mengarah ke file auth.js, siswa.js, dan guru.js di dalam folder routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/siswa', require('./routes/siswa'));
-app.use('/api/guru', require('./routes/gurutemp')); // <--- Jalur API Guru berhasil dimasukkan!
+app.use('/api/guru', require('./routes/guru')); // <--- Jalur API Guru berhasil dimasukkan!
 
 // --- JALANKAN SERVER ---
 const PORT = process.env.PORT || 5000;
