@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const guru = require('../models/guru');
+const Guru = require('../models/Guru');
 const verifyToken = require('../middleware/verifyToken');
 
 // API: Tambah Guru Baru
